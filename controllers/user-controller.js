@@ -4,10 +4,14 @@ const userController = {
     // get all users
     getAllUser(req, res) {
         User.find({})
-        // .populate({
-        //     path: 'thoughts',
-        //     select: '-__v'
-        // })
+        .populate({
+            path: 'thoughts',
+            select: '-__v'
+        })
+        .populate({
+            path: 'friends',
+            select: '-__v'
+        })
         .select('-__v')
         .sort({ _id: -1 })
         .then(dbUserData => res.json(dbUserData))
@@ -20,10 +24,14 @@ const userController = {
     // get one user by id
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
-        // .populate({
-        //     path: 'thoughts',
-        //     select: '-__v'
-        // })
+        .populate({
+            path: 'thoughts',
+            select: '-__v'
+        })
+        .populate({
+            path: 'friends',
+            select: '-__v'
+        })
         .select('-__v')
         .then(dbUserData => {
             if (!dbUserData) {
@@ -61,9 +69,18 @@ const userController = {
     // delete a user by id
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.id })
+        .then(deletedUser => {
+            if (!deletedUser) {
+                return res.status(404).json({ message: 'No user found with this id!' });
+            }
+            return Thought.deleteMany(
+                { userId: params.id },
+                { new: true }
+            );
+        })
         .then(dbUserData => {
             if (!dbUserData) {
-                res.status(404).json({ message: 'No user found with this id!' });
+                res.status(404).json({ message: 'No thoughts found with this user id!' });
                 return;
             }
             res.json(dbUserData);
