@@ -29,11 +29,12 @@ To install all dependencies needed for this application. Run `$ mongod` to ensur
 From the root of the project folder, from the command line run:
     
     $ node server.js
-You should see `Connected on localhost:3001` logged in the terminal, meaning the server is connected and running. Navigate to Insomnia Core to test all API routes. <br>
+You should see `Connected on localhost:3001` logged in the terminal, meaning the server is connected and running. Navigate to Insomnia Core to test all API routes. <br> 
+<br>
 ![start](https://user-images.githubusercontent.com/70179648/107981106-18aa1580-6f87-11eb-8e17-01e5ac8c08f1.gif) <br>
 
 Watch the [full video walkthrough](https://drive.google.com/file/d/1gQ5wKiwv0dElEVDOgk0EH4jILoh0pR7W/view) to see all API routes being tested. 
 
 ## Contributing
-Made by Tatum Stafford for the UTAustin Coding BootCamp 2021. <br>
-[GitHub Profile](https://github.com/tmstafford)
+- Made by Tatum Stafford for the UTAustin Coding BootCamp 2021. <br>
+- [GitHub Profile](https://github.com/tmstafford)
