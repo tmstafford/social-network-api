@@ -5,7 +5,7 @@ Social Network API is an API for a social network web application where users ca
 
 When the server is started, the Mongoose models are synced to the MongoDB database and users can test all API routes through Insomnia Core. 
 
-Watch the [full video walkthrough](https://drive.google.com/file/d/1gQ5wKiwv0dElEVDOgk0EH4jILoh0pR7W/view) of the social network API. 
+**Watch the [full video walkthrough](https://drive.google.com/file/d/1gQ5wKiwv0dElEVDOgk0EH4jILoh0pR7W/view) of the social network API.**
 
 Create, Read, Update, Delete actions for 'Users': <br>
 ![CRUDusers](https://user-images.githubusercontent.com/70179648/107980054-3e361f80-6f85-11eb-88de-82e4648aabbd.gif) <br>
@@ -33,7 +33,7 @@ You should see `Connected on localhost:3001` logged in the terminal, meaning the
 <br>
 ![start](https://user-images.githubusercontent.com/70179648/107981106-18aa1580-6f87-11eb-8e17-01e5ac8c08f1.gif) <br>
 
-Watch the [full video walkthrough](https://drive.google.com/file/d/1gQ5wKiwv0dElEVDOgk0EH4jILoh0pR7W/view) to see all API routes being tested. 
+**Watch the [full video walkthrough](https://drive.google.com/file/d/1gQ5wKiwv0dElEVDOgk0EH4jILoh0pR7W/view) to see all API routes being tested.** 
 
 ## Contributing
 - Made by Tatum Stafford for the UTAustin Coding BootCamp 2021. <br>
